@@ -5,11 +5,13 @@ document.getElementById('menu-icon').addEventListener('click', function() {
 
 /* Máscaras */
 
+/* Máscara CPF */
+
 $(document).ready(function(){
   $('#cpf').inputmask('999.999.999-99'); // Substitua '99/99/9999' pela máscara desejada
 });
 
-/* Telefone */
+/* Máscara Telefone */
 
 $(document).ready(function(){
   $('#campoComMascara').inputmask('(99)99999-9999'); // Substitua '99/99/9999' pela máscara desejada
