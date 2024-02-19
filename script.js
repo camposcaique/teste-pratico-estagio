@@ -3,6 +3,17 @@ document.getElementById('menu-icon').addEventListener('click', function() {
   menu.classList.toggle('show');
 });
 
+/* Máscaras */
+
+$(document).ready(function(){
+  $('#cpf').inputmask('999.999.999-99'); // Substitua '99/99/9999' pela máscara desejada
+});
+
+/* Telefone */
+
+$(document).ready(function(){
+  $('#campoComMascara').inputmask('(99)99999-9999'); // Substitua '99/99/9999' pela máscara desejada
+});
 
 /* Ver telefone */
 

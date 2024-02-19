@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máscara em Tempo Real</title>
+    <!-- Inclua a biblioteca InputMask -->
+    <script src="https://unpkg.com/imask"></script>
+</head>
+<body>
+
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" name="telefone">
+
+    <script>
+        // Selecione o campo de entrada
+        var telefoneInput = document.getElementById('telefone');
+
+        // Crie uma instância da InputMask
+        var telefoneMask = IMask(telefoneInput, {
+            mask: '(99) 99999999'  // Defina a máscara desejada
+        });
+    </script>
+
+</body>
+</html>
