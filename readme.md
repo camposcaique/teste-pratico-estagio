@@ -2,7 +2,7 @@
 
 ![preview](./img/captura.png)
 
->Projeto realizado para um teste prático para um vaga de estágio.
+>Projeto realizado para um teste prático para uma vaga de estágio.
 
 [Clique aqui para acessar](https://camposcaique.github.io/teste-pratico-estagio/)
 
