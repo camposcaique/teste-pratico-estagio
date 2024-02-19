@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+    <title>Teste Prático</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="./img/logo.jpg">
+            <span id="menu-icon">&#9776;</span>
+            <ul id="menu">
+                <li><a href="#">Condomínios</a></li>
+                <li><a href="#">Fórum</a></li>
+                <li><a href="#">Guia</a></li>
+                <li><a href="#">Artigos</a></li>
+                <li><a href="#">Ferramentas</a></li>
+
+            </ul>
+            <ul>
+                <ul id="menu">
+                    <li><a href="#">Cotar Imóvel</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Entrar</a></li>
+                    <button>Cadastre-se</button>
+        
+                </ul>
+            </ul>
+        
+        </nav>
+        </header>
+
+    <section class="section1">
+    
+        <div class="geral-body">
+
+            <div class="card">
+                <div class="imagem">
+                    <div class="imagem-desfocada"></div>
+                    <div class="imagem-nitida">
+                        <img src="./img/corretor1.jpg" alt="Imagem do corretor">
+                    </div>
+                </div>
+                <div class="detalhes">
+                    <h2>Marcela</h2>
+                    <p>1200 pontos</p>
+                    <a href="#" onclick="alternarConteudo('conteudo1')">Ver telefone</a>
+                    <div id="conteudo1" class="conteudo-oculto">
+                        <p>(99)9999-9999</p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="card">
+                    <div class="imagem">
+                        <div class="imagem-desfocada2"></div>
+                        <div class="imagem-nitida">
+                            <img src="./img/corretor2.jpg" alt="Imagem do corretor">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <h2>Mauricio</h2>
+                        <p>1200 pontos</p>
+
+                        <a href="#" onclick="alternarConteudo('conteudo2')">Ver telefone</a>
+                        <div id="conteudo2" class="conteudo-oculto">
+                            <p>(99)9999-9999</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    <div class="container">
+        <h2 style="text-align: center;">Formulário</h2>
+        <form id="myForm">
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+      
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+      
+          <label for="assunto">Assunto:</label>
+          <textarea id="assunto" name="assunto" placeholder="Digite seu assunto" rows="4" required></textarea>
+      
+          <button type="button" onclick="exibirAlerta()">Enviar</button>
+        </form>
+      </div>
+
+      <div class="card2">
+        <h2 style="text-align: center;">Regra de Três</h2>
+        <form id="regraDeTresForm">
+          <label for="valor1">Valor 1:</label>
+          <input type="number" id="valor1" name="valor1" placeholder="Digite o valor 1" required>
+      
+          <label for="proporcao1">Proporção 1:</label>
+          <input type="number" id="proporcao1" name="proporcao1" placeholder="Digite a proporção 1" required>
+      
+          <label for="valor2">Valor 2:</label>
+          <input type="number" id="valor2" name="valor2" placeholder="Digite o valor 2" required>
+      
+          <label for="resultado">Resultado:</label>
+          <input type="text" id="resultado" name="resultado" readonly>
+      
+          <button type="button" onclick="calcularRegraDeTres()">Calcular</button>
+        </form>
+      </div>
+    </section>
+
+<!-- Modal -->
+<section class-="section2">
+<div class="card4">
+    <img src="./img/casa.jpg" alt="Imagem">
+    <button onclick="openModal()">Ver Foto em Modal</button>
+</div>
+
+<div id="modal-container">
+    <div id="modal-content">
+        <span id="close-modal" onclick="closeModal()">&times;</span>
+        <img src="./img/casa.jpg" alt="Imagem">
+    </div>
+</div>
+
+<!--html2canvas-->
+
+<div class="card5" id="capture">
+    <!-- Coloque o caminho da sua imagem aqui -->
+    <img src="./img/casa.jpg" alt="Imagem">
+    <button onclick="capture()">Capturar Imagem</button>
+</div>
+
+
+<!-- Card Animado -->
+<div class="card6">
+    <img src="./img/casa.jpg" alt="Imagem do Card">
+</div>
+
+<!-- Footer -->
+
+
+
+
+</section>
+
+<footer>
+    <ul>
+    <a href="#">Termos</a>
+    <a href="#">Contatos</a>
+    <a href="#">Sobre</a>
+    </ul>
+    <span>&copy; Copyrigth 2024. Todos os direitos reservados.</span>
+    <img src="./img/logo.jpg" alt="Logo da Empresa" class="logo">
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
