@@ -1,6 +1,6 @@
 # Projeto Prático para Estágio
 
-![preview](./Imagens)
+![preview](./img/captura.png)
 
 >Projeto realizado para um teste prático para um vaga de estágio.
 
